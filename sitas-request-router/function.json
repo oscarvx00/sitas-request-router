@@ -1,0 +1,26 @@
+{
+  "scriptFile": "__init__.py",
+  "bindings": [
+    {
+      "name": "msg",
+      "type": "serviceBusTrigger",
+      "direction": "in",
+      "queueName": "download-request-prod",
+      "connection": "SERVICE_BUS_CONNECTION"
+    },
+    {
+      "name": "msgSoundcloud",
+      "type": "servicebus",
+      "direction": "out",
+      "queueName": "download-request-soundcloud-prod",
+      "connection": "SERVICE_BUS_CONNECTION"
+    },
+    {
+      "name": "msgYoutube",
+      "type": "servicebus",
+      "direction": "out",
+      "queueName": "download-request-youtube-prod",
+      "connection": "SERVICE_BUS_CONNECTION"
+    }
+  ]
+}
